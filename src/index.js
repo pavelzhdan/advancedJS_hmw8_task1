@@ -10,7 +10,7 @@ export default class Team {
 
   add(characterName) {
     if (this.members.has(characterName)) {
-      return Error('Персонаж уже добавлен в команду');
+      return 'Персонаж уже добавлен в команду';
     } else {
       this.members.add(characterName);
     }
