@@ -17,11 +17,7 @@ export default class Team {
   }
 
   addAll(...rest) {
-    const characterArray = [...rest];
-    characterArray.forEach((element) => {
-      if (this.members.has(element)) {
-        return;
-      }
+    [...rest].forEach((element) => {
       this.members.add(element);
     });
   }

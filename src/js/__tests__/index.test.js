@@ -14,7 +14,7 @@ test('character added twice', () => {
   const brotherhood = new Team();
   brotherhood.add(bowman);
   brotherhood.add(bowman);
-  expect(brotherhood.add(bowman)).toEqual(Error('Персонаж уже добавлен в команду'));
+  expect(brotherhood.add(bowman)).toBe('Персонаж уже добавлен в команду');
 });
 
 test('all characters added', () => {
